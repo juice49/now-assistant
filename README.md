@@ -28,7 +28,7 @@ handling.
 
 I use Now to host the Assistant. Currently, the Assistant does *not* read
 config from your project's `now.json` or `package.json`. Instead, set the following
-environment variables when you deploy the assistant:
+environment variables when you deploy the Assistant:
 
 | Variable | Description | Required | Options |
 |---|---|---|---|
