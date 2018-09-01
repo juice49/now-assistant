@@ -30,11 +30,12 @@ I use Now to host the Assistant. Currently, the Assistant does *not* read
 config from your project's `now.json` or `package.json`. Instead, set the following
 environment variables when you deploy the assistant:
 
-| Variable | Description | Required |
-|---|---|---|
-| NOW_TOKEN | Now access token. | Required |
-| GIT_REMOTE | The remote of the git repository to deploy. | Required |
-| ALIAS | The alias to set once the deployment is ready. | Optional |
+| Variable | Description | Required | Options |
+|---|---|---|---|
+| NOW_TOKEN | Now access token. | Required | |
+| GIT_REMOTE | The remote of the git repository to deploy. | Required | |
+| DEPLOYMENT_TYPE | Now deployment type. | Required | `NPM`, `DOCKER`, or `STATIC` |
+| ALIAS | The alias to set once the deployment is ready. | Optional | |
 
 There are lots of options missing currently. When deploying using the Now CLI,
 it handles much of the config—and I've not included this in the Assistant.

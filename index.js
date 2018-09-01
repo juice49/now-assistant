@@ -13,10 +13,15 @@ if (!process.env.GIT_REMOTE) {
   throw new Error(`GIT_REMOTE is required.`)
 }
 
+if (!process.env.DEPLOYMENT_TYPE) {
+  throw new Error(`DEPLOYMENT_TYPE is required.`)
+}
+
 const deploy = require('./lib/deploy')({
   token: process.env.NOW_TOKEN,
   remote: process.env.GIT_REMOTE,
   alias: process.env.ALIAS,
+  deploymentType: process.env.DEPLOYMENT_TYPE,
   onBegin () {
     log('Clone repo')
   },
