@@ -24,7 +24,7 @@ handling.
 
 ## Setup
 
-[![Deploy to now](https://deploy.now.sh/static/button.svg)](https://deploy.now.sh/?repo=https://github.com/juice49/now-assistant&env=NOW_TOKEN&env=GIT_REMOTE&env=ALIAS)
+[![Deploy to now](https://deploy.now.sh/static/button.svg)](https://deploy.now.sh/?repo=https://github.com/juice49/now-assistant&env=NOW_TOKEN&env=GIT_REMOTE&env=ALIAS&env=DEPLOYMENT_TYPE)
 
 I use Now to host the Assistant. Currently, the Assistant does *not* read
 config from your project's `now.json` or `package.json`. Instead, set the following
